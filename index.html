@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mauli Kirana And General Stores</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #f8f9fa; color: #333; }
+    header { background: #0077b6; color: white; padding: 20px; text-align: center; font-size: 1.8rem; }
+    .store { padding: 30px; max-width: 1200px; margin: auto; }
+    h2 { margin: 20px 0; color: #0077b6; }
+    
+    /* Common product style */
+    .products { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+      gap: 20px; 
+    }
+    .product { 
+      background: white; 
+      padding: 15px; 
+      border-radius: 10px; 
+      text-align: center; 
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1); 
+    }
+    .product img { 
+      max-width: 100%; 
+      height: 150px; 
+      object-fit: cover; 
+      border-radius: 8px; 
+    }
+    .product h3 { margin: 10px 0; font-size: 1.2rem; }
+    .product p { font-size: 0.95rem; color: #555; }
+    .price { color: #e63946; font-weight: bold; margin: 8px 0; }
+
+    /* Special styling for ice creams (horizontal scroll) */
+    .icecreams {
+      display: flex;
+      flex-wrap: nowrap;   /* keep items in one line */
+      gap: 20px;
+      overflow-x: auto;    /* allow scroll on mobile */
+      padding-bottom: 10px;
+    }
+    .icecreams .product {
+      min-width: 200px;
+      flex: 0 0 auto;
+    }
+
+    footer { 
+      background: #0077b6; 
+      color: white; 
+      text-align: center; 
+      padding: 10px; 
+      margin-top: 20px; 
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Mauli Kirana And General Store
+  </header>
+
+  <div class="store">
+
+    <!-- Ice Creams -->
+    <h2>🍦 Ice Creams</h2>
+    <div class="icecreams">
+      <div class="product">
+        <img src="https://pbs.twimg.com/media/FhMQPmZaEAAPYEz?format=jpg&name=4096x4096" alt="Cornetto">
+        <h3>Cornetto Cone</h3>
+        <p>Chocolate & Vanilla</p>
+        <p class="price">₹10</p>
+      </div>
+
+      <div class="product">
+        <img src="https://www.sheetalicecream.com/wp-content/themes/sheetal/images/cups/Big-Cup-80ml-Side.png" alt="Ice-cream Cup">
+        <h3>Ice-cream Cup</h3>
+        <p>Mango</p>
+        <p class="price">₹5 & ₹10</p>
+      </div>
+
+      <div class="product">
+        <img src="https://www.sheetalicecream.com/wp-content/themes/sheetal/images/premium-kulfi/Traditional-Kulfi.png" alt="Khulfi">
+        <h3>Khulfi</h3>
+        <p>Mava</p>
+        <p class="price">₹5 & ₹10</p>
+      </div>
+
+      <div class="product">
+        <img src="https://www.sheetalicecream.com/wp-content/themes/sheetal/images/chocobar/Cream-Chocobar.png" alt="chocobar">
+        <h3>Chocobar</h3>
+        <p>Chocolate</p>
+        <p class="price">₹5 & ₹10</p>
+      </div>
+    </div>
+
+    <!-- Pulses & Grains -->
+    <h2>🫘 Pulses & Grains</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://cdn.shopaccino.com/edible-smart/products/toor-dal-min-scaled-740285_m.jpg?v=587" alt="Toor Dal">
+        <h3>Toor Dal 1kg</h3>
+        <p>Best Quality Pulses</p>
+        <p class="price">₹200</p>
+      </div>
+
+      <div class="product">
+        <img src="https://healthymiller.com/cdn/shop/files/Moong_dhuliPulse.png?v=1693903186" alt="Moong Dal">
+        <h3>Moong Dal 1kg</h3>
+        <p>Best Quality Pulses</p>
+        <p class="price">₹150</p>
+      </div>
+
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDUvHAghSofIzXdmSOvX6-E2lLvjh-1ctNOQ&s" alt="Urad Dal">
+        <h3>Urad Dal 1kg</h3>
+        <p>Best Quality Pulses</p>
+        <p class="price">₹150</p>
+      </div>
+
+      <div class="product">
+        <img src="https://ifestore.com/wp-content/uploads/2024/03/masur-5.jpg" alt="Masoor Dal">
+        <h3>Masoor Dal 1kg</h3>
+        <p>Best Quality Pulses</p>
+        <p class="price">₹130</p>
+      </div>
+
+      <div class="product">
+        <img src="https://storage.googleapis.com/shy-pub/27189/1642268025815_chola-daal-500x500%20(1).png" alt="Chawali Dal">
+        <h3>Chawali Dal 1kg</h3>
+        <p>Best Quality Pulses</p>
+        <p class="price">₹130</p>
+      </div>
+
+      <div class="product">
+        <img src="https://c.ndtvimg.com/2023-08/brlp7gk_uncooked-rice-or-rice-grains_625x300_18_August_23.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=738" alt="Basmati Rice">
+        <h3>Basmati Rice</h3>
+        <p>Best Quality Rice</p>
+        <p class="price">₹100</p>
+      </div>
+    </div>
+
+    <!-- Grocery & Essentials -->
+    <h2>🛒 Grocery & Essentials</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://redrosemart.com/cdn/shop/files/8df34e1b-ef3b-4c14-863a-5904612665f3202392595.jpg?v=1703947346&width=1946" alt="Tata Salt">
+        <h3>Tata Salt 1kg</h3>
+        <p>Trusted Quality Salt</p>
+        <p class="price">₹30</p>
+      </div>
+
+      <div class="product">
+        <img src="https://assets.hyperpure.com/data/images/products/0ae5f4b298b66d67d19a0f2aa9a02c31.png" alt="Fortune Oil">
+        <h3>Fortune Oil 1L</h3>
+        <p>Refined Sunflower Oil</p>
+        <p class="price">₹150</p>
+      </div>
+
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5jQmu8r_dyaZJCFl-uFJfYIvW5iEv_OVqA&s" alt="Sugar">
+        <h3>Sugar 1kg</h3>
+        <p>Best Quality Sugar</p>
+        <p class="price">₹50</p>
+      </div>
+
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71cSMyKZB4L.jpg" alt="Besan">
+        <h3>Besan</h3>
+        <p class="price">₹100 /kg</p>
+        <p>Also available in ₹10 packet </p>
+      </div>
+
+      <div class="product">
+        <img src="https://bhaskarmasale.com/images/products/5.jpg" alt="Mirchi">
+        <h3>Bhaskar Mirchi</h3>
+        <p class="price">₹300 /kg</p>
+        <p>Also available in ₹5 & ₹10 & 200gm packet </p>
+      </div>
+
+      <div class="product">
+        <img src="https://bhaskarmasale.com/images/products/23.jpg" alt="Dhana Powder">
+        <h3>Dhana Powder</h3>
+        <p class="price">₹250 /kg</p>
+        <p>Also available in ₹5 & ₹10 & 200gm packet </p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    📍 Address: Near Gram Panchayat, Dapori <br>
+    📞 Contact : 9420558030 <br>
+    © 2025 Mauli Kirana & General Stores
+  </footer>
+
+</body>
+</html>
